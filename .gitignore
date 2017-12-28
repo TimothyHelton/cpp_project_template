@@ -1,0 +1,7 @@
+# Google Tests
+googletest-master/
+._googletest-master
+
+# Jet Brains
+.idea/
+cmake-build-debug/
