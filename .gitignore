@@ -1,6 +1,8 @@
+# Builds
+build/
+
 # Google Tests
-googletest-master/
-._googletest-master
+tests/lib/
 
 # Jet Brains
 .idea/
