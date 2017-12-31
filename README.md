@@ -14,7 +14,7 @@ Feel free to fork this repository and tailor it to suit you.
 ## Procedure
 1. Clone the Repository
     ```bash
-    git clone
+    git clone https://github.com/TimothyHelton/cpp_project_template
     ```
 1. In the top level **CMakeLists.txt**:
     1. Line 2: Change the variable **MyProject** to the name of your project.
@@ -25,7 +25,7 @@ Feel free to fork this repository and tailor it to suit you.
             - MyProject_run: will be the main executable name
             - MyProject_lib: will be the project library name
     1. Line 4: Set the version of C++ to use.  For example, let's set up the
-    CoolProject to use C++ 11.
+    NewProject to use C++ 11.
         ```cmake
         set(CMAKE_CXX_STANDARD 11)
         ```
