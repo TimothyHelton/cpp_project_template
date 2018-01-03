@@ -2,7 +2,7 @@
 When setting out on a new project in C++ there are a few configuration steps
 which need to be completed prior to actually getting down to writing code.
 This repository is going to be a C++ project template that already has the
-following components: 
+following components:
 
 - Directory Structure
 - Make Build (CMake)
@@ -12,11 +12,16 @@ following components:
 Feel free to fork this repository and tailor it to suit you.
 
 ## Procedure
-1. Clone the Repository
+1. Download Bash script to create new C++ projects 
     ```bash
-    git clone https://github.com/TimothyHelton/cpp_project_template
+    curl -O https://raw.githubusercontent.com/TimothyHelton/cpp_project_template/master/new_cpp_project.sh
+    chmod u+x new_cpp_project.sh
     ```
-1. In the top level **CMakeLists.txt**:
+1. Create new C++ project
+    ```bash
+    ./new_cpp_project.sh NewProjectName
+    ```
+1. In the project top level **CMakeLists.txt**:
     1. Line 2: Change the variable **MyProject** to the name of your project.
         ```cmake
         project(NewProject)
@@ -46,13 +51,13 @@ for Python called [PyCharm](https://www.jetbrains.com/pycharm/) and thought
 it helped me write better code.
 I'd been wanting to learn C++ and decided to give JET Brains C/C++ IDE called
 [CLion](https://www.jetbrains.com/clion/) a try.
-The code completion, interactive suggestions, debugger, introspection tools, 
+The code completion, interactive suggestions, debugger, introspection tools,
 and built-in test execution are very handy.
 There are a couple extra details to set when using this IDE.
 
 1. The IDE allows you to mark directories with their desired purpose.
 To mark a directory right click on the directory name in the `Project` window
-and select `Mark Directory as` from the drop-down menu. 
+and select `Mark Directory as` from the drop-down menu.
     1. Mark the `src` directory as `Project Sources and Headers`
     1. Mark the `tests/lib/googletest` directory as  `Library Files`
 1. Setup the `Run/Debug Configuration` by selecting `Edit Configurations...`
@@ -66,7 +71,7 @@ corner.
         1. Chose `Google Test` from the drop-down menu.
         1. Set **Name** to `Unit Tests`.
         1. Set **Target** to `Unit_Tests_run`.
-        
+
 ## Wrap Up
 That should be all it takes to start writing code.
 If you find any issues or bugs with this repository please file an issue on
