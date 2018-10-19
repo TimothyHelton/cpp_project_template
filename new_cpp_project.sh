@@ -18,3 +18,10 @@ chmod u+x create_project.sh
 
 # Create Project
 ./create_project.sh ${NAME}
+
+# Change to the directory of the project
+cd ${NAME}
+
+echo "Changed to " `pwd`
+sed -i "" 's|MyProject|'${NAME}'|g' CMakeLists.txt
+sed -i "" "s|MyProject|'${NAME}'|g" docs/Doxyfile
