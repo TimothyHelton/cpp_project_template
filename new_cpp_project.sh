@@ -13,7 +13,7 @@ NAME=$1
 
 
 # Download latest version of the build file
-curl -O https://raw.githubusercontent.com/TimothyHelton/cpp_project_template/master/create_project.sh
+curl -O https://raw.githubusercontent.com/jwmurray/cpp_project_template/master/create_project.sh
 chmod u+x create_project.sh
 
 # Create Project
